@@ -2,7 +2,7 @@
 
 namespace ZFF\Filter;
 
-class Float extends AbstractFilter
+class Float extends \Zend\Filter\AbstractFilter
 {
     /**
      * Defined by Zend\Filter\FilterInterface
@@ -16,7 +16,7 @@ class Float extends AbstractFilter
      */
     public function filter($value)
     {
-        if (!is_float($value)) {
+        if (!is_float($value) && !is_scalar($value)) {
             return $value;
         }
         $value = (string) $value;
