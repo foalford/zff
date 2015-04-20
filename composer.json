@@ -1,0 +1,23 @@
+{
+    "name": "foalford/zff",
+    "description": "ZF2 Extended library",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "extended",
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://youpolar.com/",
+    "support": {
+        "email": "pr@youpolar.com"
+    },
+    "require": {
+        "php": ">=5.3.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZFF\\": "src/"
+        }
+    }
+}
